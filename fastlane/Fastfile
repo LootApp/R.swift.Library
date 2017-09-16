@@ -90,7 +90,7 @@ lane :runalltests do
 end
 
 desc "Release new version"
-lane :release do |options|
+lane :release_loot do |options|
     target_version = options[:version]
     raise "The version is missed. Use `fastlane release version:{version_number}`.`" if target_version.nil?
 
